@@ -1,0 +1,123 @@
+/* Sidebar styles */
+.sidebar {
+    background: #000;
+  color: #fff;
+  width: 200px;
+  height: 100vh;
+  position: fixed;
+  top: 80px; /* Adjust according to the navbar height */
+   left: 0px; 
+  transition: left 0.3s ease-in-out;
+}
+
+.styled-box1 {
+    margin-top: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:white; /* Primary color */
+    color: rgb(46, 43, 43); /* Text color */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  .styled-box {
+    margin-top: 1rem;
+    padding: 1.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color:black; /* Primary color */
+    color: aquamarine; /* Text color */
+    border-radius: 0.25rem; /* Rounded corners */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  
+  
+/* Navbar styles */
+.navbar {
+    background: #000;
+  color: #fff;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+
+
+.sidebar-menu {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar-menu li {
+  margin-bottom: 20px;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: black;
+    background-color: white;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .btn{
+    height: 40px;
+  width: 118px;
+    display: block;
+    margin-right: 30px;
+    float: right;
+  color: black;
+  margin-top: 10px;
+  background-color: white;
+  border-radius: 4px;
+  
+  }/* Basic table styles */
+  
+  a{
+    color: whitesmoke;
+  }
+
+  #alertMessage{
+ 
+    background-color: black;
+    position: fixed;
+    top: 50%;
+      right: 0%;
+    border: 2px solid rgba(234, 236, 240, 1);
+    z-index: 100;
+    border-radius: 10px;
+   color: white;
+  }
+  
+    

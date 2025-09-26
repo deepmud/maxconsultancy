@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta required value="{{}}" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Sidebar</title>
+  <link rel="stylesheet" href="../assets/css/addproduct.css">
+
+</head>
+<body>
+  <!-- represents  navbar.html or  dynamic values -->   
+  {{navbar}}
+  <div class="container" style="height: 100%;">
+   
+    <div style="margin-top: 50px;">
+    
+    
+    <div class="background" style="width: 100%; margin-bottom: 5px; height: 100%;">
+      
+        <div class="styled-box">
+          <h3 class="box-heading">Edit user profile information</h3>
+          <form action="./editprofile.html" method="post" >
+            
+            <input type="text" name="email" value="{{email}} " required   hidden>
+            <input type="text" name="id" value="{{id}} " required   hidden>
+           
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" required  id="username" value="{{username}}" name="username" >
+                </div>
+               
+                <div class="col">
+                  <input type="text" class="form-control"name="firstname" value="{{firstname}}" required  placeholder="First name" id="name" >
+              </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" required name="lastname" required  value="{{lastname}}"  placeholder="Last name" id="surname" >
+                </div>
+
+                <div class="col">
+                  <select required value="{{}}" id="gender" name="gender" style="height: 39px;width: 100%;font-size: medium;">
+                   
+                          {{gender}}
+                           </select>
+                </div>
+              </div>
+             
+              <div class="row">
+               
+                
+                <div class="col">
+                  <input type="text"  class="form-control"name="address" required  value="{{address}}"  placeholder="address" id="address" >
+                </div>
+                 
+           
+                
+                <div class="col">
+                    <input class="form-control" type="date" name="dateofbirth" placeholder="Click to select" required  value="{{dateofbirth}}"  id="DOB">
+                  </div>
+              </div>
+              <div class="row">
+               
+                
+                <div class="col">
+                     <select required value="{{}}" id="country" name="country"  style="height: 39px;width: 100%;font-size: medium;">
+                   
+                          {{countryOption}}
+                           </select>
+                </div>
+                
+
+                  <div class="col">
+                    <input type="text"  class="form-control" name="phonenumber" placeholder="xx xxx xxx" required  value="{{phonenumber}}"  id="phone">
+                  </div>
+                   
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <h3>Types of software</h3> </div>
+            </div>
+                <!-- represents  navbar.html or  dynamic values -->   
+          {{softwaretype}}
+              <div class="row">
+               
+                <div class="col">
+              <button type="submit" class="btn">Submit</button>
+            </div></div>
+          </form>
+  </div>
+</div>
+
+
+ 
+
+
+
+ 
+ 
+
+
+</div>
+  </div>
+ 
+</body>
+</html>

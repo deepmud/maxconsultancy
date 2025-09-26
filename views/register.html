@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-tab Registration Form</title>
+  <link rel="stylesheet" href="../assets/css/register.css">
+
+
+</head>
+<body>
+  
+  <!-- Registeration page for client and Vendor (Babatunde) -->
+
+      <div class="container">
+  <input type="radio" id="tab2" name="tabs" checked hidden>
+ 
+  <div class="tabs">
+    <label class="tab" for="tab2">Register as vendor</label>
+   
+  </div>
+  <div class="tab-content">
+    
+    <div id="content2">
+      <!-- Your form 2 content goes here -->
+      <h4>Register as vendor</h4>
+      <form action="./register.html" method="post">
+   
+        <input type="text"   name="type" value="vendor" hidden> 
+
+        <div class="row" style="gap: 5px;">
+          <div class="col" >
+            <input type="text"  required class="form-control" placeholder="Email" name="email" aria-label=" email">
+          </div>
+          <div class="col">
+            <input type="password" id="password1" required class="form-control" placeholder="Password" name="password" aria-label="password">
+          </div>
+          <div class="col">
+            <input  required class="form-control" placeholder="Confirm Password" type="password" id="password2" onfocusout="checkPassword(this)" required aria-label="Confirm Password">
+          </div>
+        </div>
+        
+            <div class="row">
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Company Name" name="Companyname" aria-label="Company Name">
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Company Website" name="website" aria-label="Company Website">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="year" required class="form-control" placeholder="Company Established Date" name="established" aria-label="Company Established Date">
+           
+            </div>
+            <div class="col">
+             
+                       <input type="text" required class="form-control" placeholder="Location countries" name="countries" aria-label="Location countries">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <input type="number" required class="form-control" name="employees" placeholder="No. of Employees" aria-label="No. of Employees" >
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" name="address" placeholder="Address" aria-label="Address" >
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col">
+              <input type="text" required class="form-control" placeholder="Location Cities" name="cities" aria-label="Location Cities">
+            </div>
+            <div class="col">
+              <input type="text" required class="form-control" name="telephone" placeholder="Contact Telephone No." aria-label="Contact Telephone No.">
+            </div>
+          </div>
+        
+          
+          <button type="submit" class="btn">add</button>
+      </form>
+    </div>
+  
+  </div>
+</div>
+
+<script src="../assets/js/checkpassword.js" ></script>
+
+</body>
+</html>

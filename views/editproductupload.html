@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta required value="{{}}" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Sidebar</title>
+  <link rel="stylesheet" href="../assets/css/addproduct.css">
+
+</head>
+<body>
+  <!-- represents  navbar.html or  dynamic values -->   
+  {{navbar}}
+  <div class="container" style="height: 100%;">
+   
+    <div style="margin-top: 50px;">
+  
+    
+    <div class="background" style="width: 100%; margin-bottom: 5px; height: 100%;">
+      <div class="styled-box">
+        <h3 class="box-heading">Add Product Document</h3>
+        <form action="./editproductdocument.html" method="post" enctype="multipart/form-data">
+          <div class="row">
+            <input type="text" name="id" value="{{id}} " required   hidden>
+
+              <div class="col">
+                <label for="lastreview">add pdf document</label>
+    
+                  <input type="file" id="pdf" class="form-control" value="" name="pdf" placeholder="click to add pdf" aria-label="document/file" accept=".pdf" 
+                  >
+               
+              </div>
+             
+              
+            </div>
+            <div class="row">
+                 
+              <div class="col">
+            <button type="submit" class="btn">Submit</button>
+          </div></div>
+        </form>
+    </div>
+    
+    </div>
+    
+  
+
+
+ 
+
+
+
+ 
+ 
+
+
+</div>
+  </div>
+ 
+</body>
+</html>

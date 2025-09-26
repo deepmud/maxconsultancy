@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+   <!-- represents navbar.html -->
+  {{navbar}}
+
+  <div class="container2">
+    <p style="text-align:center">User Profile Card</p>
+   
+    <div class="card">
+      <div style="display: flex; justify-content: space-around;padding: 22px; gap: 0px;"><div>
+        <img src="../assets/svg/vendor3.svg" alt="John" style="height:300px">
+  <h4>Functions</h4>
+  <p>Edit system record</p>
+               <p>View system record</p>
+               <p>Delete system record</p>
+
+      </div>
+    <div style="width: 100%;padding: 22px;">
+        <p style="text-align:center">User Profile Card</p>
+      <h2><small >Full Name</small>: {{fullname}}</h2>
+      <p ><small>Username</small>: {{username}}</p>
+      <p><small>Email</small>: {{email}}</p>
+      <p><small>Address</small>: {{address}} </p>
+      <p><small>Country</small>: {{country}}</p>
+      <p><small>Gender</small>: {{gender}}</p>
+      <p><small>Date of birth:  </small>{{dob}}</p>
+    <p><small>Phone number</small>: {{phonenumber}}</p>
+      <br><br>
+      <h4>Type Of Software</h4>
+      <p style="font-size:medium;">{{typeofsoftware}}</p>
+      
+      <p><a href="./editprofile.html?id={{id}}"><button>Edit</button></a></p>
+    </div></div>
+    </div>
+    <div id="alertMessage" >
+      <!-- represents  navbar.html or  dynamic values -->   
+      {{alerted}}
+     </div>
+</body>
+</html>

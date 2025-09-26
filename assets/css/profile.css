@@ -1,0 +1,62 @@
+@import "/assets/css/navbar.css";
+
+    /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ 
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family:fantasy !important;
+  padding: 20px;
+}
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 50%;
+    margin: auto;
+    text-align: center;
+    background-color: #000;
+    line-height: 30px;
+   color:#fff;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 450px;
+    font-family:fantasy !important;
+
+  }
+  
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #000;
+    background-color:aquamarine;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  /* a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+   */
+  button:hover, a:hover {
+    opacity: 0.7;
+  }

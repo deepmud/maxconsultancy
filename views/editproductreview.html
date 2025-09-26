@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta required value="{{}}" name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Sidebar</title>
+  <link rel="stylesheet" href="../assets/css/addproduct.css">
+
+</head>
+<body>
+  <!-- represents  navbar.html or  dynamic values -->   
+  {{navbar}}
+  <div class="container" style="height: 100%;">
+   
+    <div style="margin-top: 50px;">
+      <div class="background" style="width: 100%; margin-bottom: 1px; height: 100%;">
+        <div class="styled-box">
+          <h3 class="box-heading">Edit Product Review</h3>
+        
+          <form action="./editproductreview.html" method="post" >
+            <input type="text" name="id" value="{{id}} " required   hidden>
+
+            <div class="row">
+                <div class="col">
+                  <label for="lastreview">Date of Last Review</label>
+    
+                  <input type="date"  class="form-control" name="lastreview" placeholder="Click to select" required  value="{{lastreview}}"  id="lastreview" aria-label="Date of Last Review">
+                </div>
+               
+                <div class="col">
+                  <label for="nextreview">Date of Next Review</label>
+    
+                  <input type="date"  class="form-control" name="nextreview" placeholder="Click to select" required  value="{{nextreview}}"  id="nextreview" aria-label="Date of Next Review">
+              </div>
+              </div>
+              <div class="row">
+                   
+                <div class="col">
+              <button type="submit" class="btn">Submit</button>
+            </div></div>
+          </form>
+    </div>
+    
+    </div>
+    
+    
+
+ 
+
+
+
+ 
+ 
+
+
+</div>
+  </div>
+ 
+</body>
+</html>

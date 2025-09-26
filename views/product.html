@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+   <!-- represents navbar.html -->
+  {{navbar}}
+
+  <div class="container2"  >
+    <p style="text-align:center">product Card</p>
+    <div class="card" style="background-color: black; color: white;">
+        <div class="" style="display: flex; justify-content: space-around; " >
+        <div><a href="updatewishproduct?id={{id}}&val={{decideval}}" style="display: flex; flex-direction: column;  align-items: center;line-height: 6px;text-decoration: none;"><img src="../assets/svg/{{hearted}}" alt="" width="30px"><small  style="color: black;">{{decide}}</small></a></div>
+      </div>
+        <div style="padding: 15px; text-align:start;" >
+       
+     
+      
+        <h2 style="text-align:center;">Product Name: {{productname}}</h2>
+        <div style="text-align:center;">
+          <img src="../assets/svg/product5.svg" alt="John" style="height:300px">
+    
+        </div>
+      <p><small>Type Of Software</small>:  {{typeofsoftware}}</p>
+      <p><small>Modules</small>:  {{modules}}</p>
+      <p><small>Business Areas</small>:  {{businessareas}}</p>
+      <p><small>Cloud Type</small>:  {{cloud}}</p>
+      <p><small>Service Client Type</small>:  {{clientservice}}</p>
+      {{pid}}
+       <p><small>Company Name</small>:  {{companyname}}</p>
+       <p><small>Company Profile</small>:  <a href="./vendorprofile.html?id={{vid}}"  target="_blank">Open Profile</a></p>
+      <br>
+    
+      
+      <p><small>Website</small>:  <a href="{{Website}}"  target="_blank">{{Website}}</a></p>
+
+      <p><small>Description</small>:  {{description}}</p>
+      <p><small>Last Date Reviewed</small>:  {{lastdatereviewed}}</p>
+      <p><small>Next Date Review</small>:  {{nextdatereview}}</p>
+      {{editbutton}}
+    </div>
+    </div>
+    </div>
+   
+<div id="notifcontainer" hidden>
+  <div class="" >
+      <div class="colnotifc" style="text-align: center;" >
+          Rate Product
+      </div>
+      
+       <div>
+         
+          {{yourrate}}
+       </div>
+      </div>
+  </div>
+  
+</div>
+<script>
+  function setNotification(){
+      var remember = document.getElementById("notificationcheckbox");
+  
+  
+      var container = document.getElementById('notifcontainer');
+  
+    if (remember.checked) {
+      remember.removeAttribute('checked')
+     
+      container.setAttribute('hidden',true)
+    } else {
+      remember.setAttribute('checked',true)
+      container.removeAttribute('hidden')
+    }
+  }
+  </script>
+   <div id="alertMessage" >
+    <!-- represents  navbar.html or  dynamic values -->   
+    {{alerted}}
+   </div>
+</body>
+</html>

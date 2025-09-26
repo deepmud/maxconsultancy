@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/profile.css">
+    <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+   <!-- represents navbar.html -->
+  {{navbar}}
+  
+  <div class="container2">
+    <p style="text-align:center">vendor Profile Card</p>
+    <div class="card">
+        <div style="display: flex; justify-content: space-around;padding: 22px; gap: 0px;"><div>
+               <img src="../assets/svg/vendor3.svg" alt="John" style="height:300px">
+               <h4>Functions</h4>
+               <p>Create system record</p>
+               <p>Edit system record</p>
+               <p>View system record</p>
+               <p>Delete system record</p>
+        </div>
+      <div style="width: 100%;padding: 22px;">
+        <p style="text-align:center">Vendor Profile Card</p>
+
+      <h2><small class="title">Company Name</small>: {{companyname}}</h2>
+      <p class="title"><small>Company Website</small>: <a href="{{website}}" target="_blank">{{website}}</a></p>
+      <p><small>Company Email</small>: {{companyemail}}</p>
+      <p><small>Location Countries</small>: {{countries}}</p>
+      <p><small>Location Cities</small>: {{cities}}</p>
+      <p><small>Number Of Employees</small>: {{employees}}</p>
+      <p><small>Year Established:  </small>{{established}}</p>
+    <p><small>Contact Telephone Number</small>: {{phone}}</p>
+      <br><br>
+      <h4>Address</h4>
+      <p><small>{{address}}</small></p>
+      
+      <p><a href="./updatevendor.html?id={{id}}"><button>Edit</button></a></p>
+    </div>
+    </div>
+  </div>
+    <div id="alertMessage" >
+      <!-- represents  navbar.html or  dynamic values -->   
+      {{alerted}}
+     </div>
+</body>
+</html>
+
+

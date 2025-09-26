@@ -1,0 +1,153 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+      height: 100vh;
+      background: #000
+    }
+    *{
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+    .container {
+      width: 70%;
+      border-radius: 5px;
+      height: 80%;
+      overflow: hidden;
+      background-color: #fff;
+    }
+    .tabs {
+      display: flex;
+    }
+    .tab {
+      flex: 1;
+      text-align: center;
+      padding: 10px;
+      background-color: #000;
+      cursor: pointer;
+      color: #fff;
+    }
+    .tab-content {
+      padding: 20px;
+    }
+    .tab-content > div {
+      display: none;
+    }
+    #tab1:checked ~ .tab-content #content1,
+    #tab2:checked ~ .tab-content #content2,
+    #tab3:checked ~ .tab-content #content3 {
+      display: block;
+    }
+ 
+
+
+
+
+
+
+    #centre{
+        margin-left: 180px;
+    }
+
+    .checkbox{
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+      .header{
+        font-family: Inknut Antiqua;
+      }
+     
+  
+      
+      span{
+        /* margin-right: 10px; */
+        font-size: 12px;
+      }
+      .span{
+        padding: 10px 30px;
+      }
+  
+      
+  
+      .row {
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+      }
+      
+      .col {
+        flex: 1;
+        margin-right: 10px; /* Adjust spacing between columns */
+      }
+      
+      .form-control {
+        width: 97%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      
+      /* Optional: Adjust styles for smaller screens */
+      @media (max-width: 768px) {
+        .row {
+          flex-direction: column;
+        }
+      
+        .col {
+          margin-bottom: 10px;
+          margin-right: 0;
+        }
+      }
+      .btn{
+        height: 40px;
+      width: 118px;
+        display: block;
+        margin-right: 30px;
+        float: right;
+      color: aquamarine;
+      margin-top: 10px;
+      background-color: #000;
+      border-radius: 4px;
+      
+      }
+
+
+
+
+      /* Base styles for checkbox */
+.form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 1px solid #adb5bd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Styles for checked state */
+.form-check-input:checked {
+  background-color: #007bff;
+}
+
+/* Styles for label */
+.form-check-label {
+  cursor: pointer;
+}
+
+#alertMessage{
+  /* width:30% ; */
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  border: 2px solid rgba(234, 236, 240, 1);
+  z-index: 100;
+ border-radius: 10px;
+ color:white;
+}

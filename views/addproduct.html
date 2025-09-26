@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar with Sidebar</title>
+  <link rel="stylesheet" href="../assets/css/addproduct.css">
+
+</head>
+<body>
+  <!-- represents navbar.html -->
+  {{{navbar}}}
+  <div class="container" >
+   
+    <div style="margin-top: 50px;">
+    
+    <div class="background" style="width: 100%;">
+      
+        <div class="styled-box">
+          <h3 class="box-heading">Add Products</h3>
+          <br>
+          <form action="./addproduct.html" method="post" >
+            <div class="row">
+              <div class="col">
+                <h3>Types of software</h3> </div>
+          </div>
+              <div class="row">
+              
+              <div class="col">
+            <div class="form-check">
+              <input type="checkbox" required class="form-check-input"  name="z6" value="6" id="v6" >
+              <label class="form-check-label" for="v6">Portfolio Management Trading</label>
+            </div>
+          </div>
+          
+            <div class="col">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" name="z5" value="5" id="v5">
+              <label class="form-check-label" for="v5">Artificial Intelligence</label>
+            </div>
+          </div>
+          <div class="col">
+  
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input"  name="z4" value="4" id="v4" >
+              <label class="form-check-label" for="v4">Data Transformation</label>
+            </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" name="z3" value="3" id="v3"  >
+            <label class="form-check-label" for="v3">Data Management</label>
+          </div>
+        </div>
+          <div class="col">
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input"  name="z2" value="2" id="v2">
+            <label class="form-check-label" for="v2">Alternative Investment</label>
+          </div>
+        </div>
+        <div class="col">
+  
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input"  name="z1" value="1" id="v1" >
+            <label class="form-check-label" for="v1">Process Automation</label>
+          </div>
+          </div>
+        </div>
+           
+            <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" required name="softwarename" placeholder="Software Name" aria-label="Software Name">
+                </div>
+               
+                <div class="col">
+                  <input type="text" class="form-control" name="modules" required placeholder="Modules" aria-label="Modules">
+              </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" class="form-control" name="businessareas" required placeholder="Business Areas" aria-label="Business Areas">
+                </div>
+                <div class="col">
+                  <select name="cloud" id="Cloud" required style="height: 39px;width: 100%;font-size: medium;">
+                    <option value="">--Select Cloud--</option>
+                 
+                   
+                                <option value="enabled">Enabled    </option>
+                                <option value="native">Native    </option>
+                                <option value="based">Based    </option>
+                               
+                           </select>
+                </div>
+              </div>
+             
+              <div class="row">
+               
+                   
+                <div class="col">
+                  <input type="text"  class="form-control" required name="financialservicesclientypes" placeholder="Financial Services Client Types" aria-label="Financial Services Client Types" >
+                </div>
+                 
+             
+               
+                
+                <div class="col">
+                    <input type="text" id="description" name="description" required class="form-control" placeholder="Description" aria-label="Description">
+                  </div>
+              </div>
+              <div class="row">
+               
+                
+                <div class="col">
+                    <textarea type="text" name="additionalinformation" class="form-control" placeholder="Additional information (Optional)" aria-label="Additional information"></textarea>
+                  </div>
+              </div>
+              <div class="row">
+             
+                <div class="col">
+              <button type="submit" class="btn">Add</button>
+            </div></div>
+
+           
+          </form>
+  </div>
+  </div>
+
+</div>
+</div>
+ 
+   
+<div id="alertMessage" >
+ 
+  </div>
+  
+</body>
+</html>

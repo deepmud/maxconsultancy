@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../assets/css/updatevendor.css">
+
+  <title>Navbar with Sidebar</title>
+
+</head>
+<body>
+   <!-- represents navbar.html -->
+  {{navbar}}
+  <div class="container" >
+   
+    <div style="margin-top: 50px;">
+    
+    <div class="background" style="width: 100%;">
+      
+        <div class="styled-box">
+          <h3 class="box-heading">Update Vendor Profile</h3>
+          <br>
+          <form action="./updatevendor.html" method="post">
+   
+            <input type="text"   name="email" value={{companyemail}} hidden> 
+            <input type="text"  name="id" value={{id}} hidden>
+    
+    
+                <div class="row">
+                <div class="col">
+                  <input type="text" required  value="{{companyname}}"  class="form-control" placeholder="Company Name" name="companyname" aria-label="Company Name">
+                </div>
+                <div class="col">
+                  <input type="text" required  value="{{website}}"  class="form-control" placeholder="Company Website" name="website" aria-label="Company Website">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="year" required  value="{{established}}"  class="form-control" placeholder="Company Established Date" name="established" aria-label="Company Established Date">
+               
+                </div>
+                <div class="col">
+                 
+                           <input type="text" required  value="{{countries}}"  class="form-control" placeholder="Location countries" name="countries" aria-label="Location countries">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="text" required  value="{{cities}}"  class="form-control" placeholder="Location Cities" name="cities" aria-label="Location Cities">
+                </div>
+                <div class="col">
+                  <input type="text" required  value="{{phone}}"  class="form-control" name="telephone" placeholder="Contact Telephone No." aria-label="Contact Telephone No.">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <input type="number" required  value="{{employees}}"  class="form-control" name="employees" placeholder="No. of Employees" aria-label="No. of Employees" ">
+                </div>
+                <div class="col">
+                  <input type="text" required  value="{{address}}"  class="form-control" name="address" placeholder="Address" aria-label="Address" >
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </div>
+          </form>
+               
+  </div>
+  </div>
+</div>
+  </div>
+</body>
+</html>
